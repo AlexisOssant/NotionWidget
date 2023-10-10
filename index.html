@@ -53,10 +53,11 @@
     var hrs = today.getHours();
     var dayOfWeek = weekday[today.getDay()];
     var date = dayOfWeek+" " + today.getDate() + "/" +(today.getMonth()+1) +'/'+today.getFullYear()  ;
+    var time = today.getHours() + ":" + today.getMinutes() ;
 
 
     document.getElementById('lbl').innerHTML =
-        `<div id="date"> It's ${date}</div>`;
+        `<div id="date"> It's ${date} ${time} </div>`;
 </script> 
 </html>
 
